@@ -1,0 +1,58 @@
+
+Change address  [Make link to show  below option other hide ]
+district dropdown
+Thana dropdown
+Zip COde input 
+
+[And this area show after slect all in address and finally radio button checked the price add with subtotal instead flat 150]
+Free shipping
+Local pickup (0-0.5 Kg, Inside Dhaka District): 60.00৳  [Radio Button]
+Local pickup (0.5-1 Kg, Inside Dhaka District): 70.00৳  [Radio Button]
+Local pickup (1-2 Kg, Inside Dhaka District): 90.00৳  [Radio Button]
+Local pickup (0-0.5 Kg, Outside Dhaka District): 110.00৳   [Radio Button]
+Local pickup (0.5-1 Kg, Outside Dhaka District): 130.00৳   [Radio Button]
+Local pickup (1-2 Kg, Outside Dhaka District): 170.00৳    [Radio Button]
+Local pickup same day (0-0.5 Kg, Inside Dhaka Metro City Only): 120.00৳   [Radio Button]
+Local pickup same day (0.5-2 Kg, Inside Dhaka Metro City Only): 150.00৳   [Radio Button]
+Shipping to Gopalpur, Tangail, 1990.  [Thats show user seleted address ]
+                                          <li id="menu-item-480"
+                                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480 nav-item elementskit-mobile-builder-content"
+                                              data-vertical-menu="750px">
+
+                                              @if(Auth::check())
+                                                  @php $user = auth()->user(); @endphp
+
+                                                  <a class="nav-link dropdown-toggle {{ request()->routeIs('admin.dashboard') || request()->routeIs('user.dashboard') ? 'active' : '' }}"
+                                                    href="javascript:void(0)">
+                                                      <i class="fa fa-user"></i>&nbsp; {{ $user->name }}
+                                                  </a>
+
+                                                  <ul class="dropdown-menu">
+                                                      @if ($user->hasRole('admin'))
+                                                          <li>
+                                                              <a class="dropdown-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"
+                                                                href="{{ route('admin.dashboard') }}">
+                                                                  Admin Dashboard
+                                                              </a>
+                                                          </li>
+                                                      @endif
+                                                      <li>
+                                                          <a class="dropdown-item {{ request()->routeIs('user.dashboard') ? 'active' : '' }}"
+                                                            href="{{ route('user.dashboard') }}">
+                                                              Member Dashboard
+                                                          </a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="dropdown-item" href="{{ route('logout') }}">
+                                                              Logout
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              @else
+                                                  <a href="{{ route('login') }}"
+                                                    class="ekit-menu-nav-link menu-link {{ request()->routeIs('login') ? 'active' : '' }}">
+                                                    Login
+                                                  </a>
+                                              @endif
+
+                                          </li>

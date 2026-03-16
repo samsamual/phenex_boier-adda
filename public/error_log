@@ -1,0 +1,26 @@
+[01-Sep-2025 04:17:17 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:335
+Stack trace:
+#0 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(642): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(623): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(554): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#4 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(460): Illuminate\Foundation\Exceptions\Handler->prepareResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#5 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\Finder\Exception\DirectoryNotFoundException))
+#6 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(493): Illuminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\Finder\Exception\DirectoryNotFoundException))
+#7 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(138): Illuminate\Foundation\Http\Kernel->renderException(Object(Illuminate\Http\Request), Object(Symfony\Component\Finder\Exception\DirectoryNotFoundException))
+#8 /home/phenexso/public_html/93-Sasthoseba/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}
+  thrown in /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 335
+[01-Sep-2025 04:17:18 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:335
+Stack trace:
+#0 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(642): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(623): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(554): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#4 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(460): Illuminate\Foundation\Exceptions\Handler->prepareResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#5 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\Finder\Exception\DirectoryNotFoundException))
+#6 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(493): Illuminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\Finder\Exception\DirectoryNotFoundException))
+#7 /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(138): Illuminate\Foundation\Http\Kernel->renderException(Object(Illuminate\Http\Request), Object(Symfony\Component\Finder\Exception\DirectoryNotFoundException))
+#8 /home/phenexso/public_html/93-Sasthoseba/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}
+  thrown in /home/phenexso/public_html/93-Sasthoseba/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 335
